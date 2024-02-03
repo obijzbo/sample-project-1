@@ -19,4 +19,5 @@ jobs:
         git checkout main
         git merge --allow-unrelated-histories dev
         git push origin main
-      
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
